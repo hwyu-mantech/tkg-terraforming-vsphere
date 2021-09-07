@@ -46,9 +46,8 @@ resource "vsphere_virtual_machine" "jumpbox" {
   }
 
   disk {
-    label            = "disk0"
-    thin_provisioned = true
-    size             = 20
+    label = "disk0"
+    size  = 20
   }
 
   clone {
